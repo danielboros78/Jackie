@@ -37,7 +37,7 @@ namespace Jackie
 
         private static void HarmadikFeladat()
         {
-
+            Console.Write($"3. feladat: {lista.Count}");
         }
 
         private static void MasodikFeladat()
