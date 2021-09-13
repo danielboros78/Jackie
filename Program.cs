@@ -27,7 +27,22 @@ namespace Jackie
 
         private static void Otodikfeladat()
         {
-
+            int hatvanas = 0;
+            int hetvenes = 0;
+            for (int i = 0; i < lista.Count; i++)
+            {
+                if (1960 <= lista[i].Year && lista[i].Year <= 1969)
+                {
+                    hatvanas += lista[i].Wins;
+                }
+                if (1970 <= lista[i].Year && lista[i].Year <= 1979)
+                {
+                    hetvenes += lista[i].Wins;
+                }
+            }
+            Console.WriteLine("5. feladat: ");
+            Console.WriteLine($"\t70-es évek: {hetvenes} megnyert verseny");
+            Console.WriteLine($"\t60-as évek: {hatvanas} megnyert verseny");
         }
 
         private static void NegyedikFeladat()
