@@ -32,12 +32,21 @@ namespace Jackie
 
         private static void NegyedikFeladat()
         {
-
+            int maxYear = 0, maxRace = 0;
+            foreach (var i in lista)
+            {
+                if (i.Races > maxRace)
+                {
+                    maxRace = i.Races;
+                    maxYear = i.Year;
+                }
+            }
+            Console.WriteLine($"4. feladat: {maxYear}");
         }
 
         private static void HarmadikFeladat()
         {
-            Console.Write($"3. feladat: {lista.Count}");
+            Console.Write($"3. feladat: {lista.Count}\n");
         }
 
         private static void MasodikFeladat()
